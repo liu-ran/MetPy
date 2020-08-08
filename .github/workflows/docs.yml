@@ -124,8 +124,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.7.0-7
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/build/html/
+        publish_dir: ./docs/build/html
         exclude_assets: '.buildinfo'
         destination_dir: ./${{ env.DOC_VERSION }}
-        keep_files: false
+        keep_files: true
         full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
