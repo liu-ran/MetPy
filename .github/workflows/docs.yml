@@ -127,5 +127,5 @@ jobs:
         publish_dir: ./docs/build/html/
         exclude_assets: '.buildinfo'
         destination_dir: ./${{ env.DOC_VERSION }}
-        keep_files: true
+        keep_files: false
         full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
